@@ -18,6 +18,10 @@
 	font-size: 18px;
 }
 
+.detail-image {
+	width: 90%;
+}
+
 body {
 	font-size: 10px;
 	background-color: rgb(149, 194, 215);

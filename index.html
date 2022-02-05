@@ -4,69 +4,38 @@
 	Date: 2022-01-22
 -->
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ottergram</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-	<link rel="stylesheet" href="./stylesheets/styles.css">
-	<link rel="icon" href="favicon.ico">
-</head>
-<body>
-
-	<!-- ===START CONTAINER=== -->
-  	<div class="container">
-	
-	    <!-- 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ottergram</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./stylesheets/styles.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <!-- ===START CONTAINER=== -->
+    <div class="container">
+      <!-- 
 	    	===HEADER===
 	        masthead representing the header for the whole page 
 	        Typically, the page header includes the site's logo, the main navigation,
 	        other global links, and possibly even a search box
 	    -->
-		<header id="header">
-			<h1 class="logo-text"><a href="#">ottergram</a></h1>
-		</header>
+      <header id="header">
+        <h1 class="logo-text"><a href="#">ottergram</a></h1>
+      </header>
 
-		<!--
+      <!--
 			===MAIN NAVIGATION===
 			Links in a nav may point to content within the page, to other pages 
 			or resources, or both. Whatever the case maybe, use nav only for the
 			the page's most important groups of links, not all of them.
 		-->
-		<ul class="thumbnail-list">
-			<li class="thumbnail-item">
-				<a href="#">
-					<img class="thumbnail-image" src="./img/otter1.jpg" alt="Barry the Otter">
-					<span class="thumbnail-title">Barry</span>
-				</a>
-			</li>
-			<li class="thumbnail-item">
-				<a href="#">
-					<img class="thumbnail-image" src="./img/otter2.jpg" alt="Robin the Otter">
-					<span class="thumbnail-title">Robin</span>
-				</a>
-			</li>
-			<li class="thumbnail-item">
-				<a href="#">
-					<img class="thumbnail-image" src="./img/otter3.jpg" alt="Maurice the Otter">
-					<span class="thumbnail-title">Maurice</span>
-				</a>
-			</li>
-			<li class="thumbnail-item">
-				<a href="#">
-					<img class="thumbnail-image" src="./img/otter4.jpg" alt="Lesley the Otter">
-					<span class="thumbnail-title">Lesley</span>
-				</a>
-			</li>
-			<li class="thumbnail-item">
-				<a href="#">
-					<img class="thumbnail-image" src="./img/otter5.jpg" alt="Barbara the Otter">
-					<span class="thumbnail-title">Barbara</span>
-				</a>
-			</li>
-		</ul>
 
-	    <!--
+      <!--
 	    	===MAIN CONTENT===
 	        The main element surrounds the content for the page's central topic.
 	        It's good practice to include role="main" in the main start tag.
@@ -75,8 +44,65 @@
 	        The role="main" attribute-value pair can help screen readers locate
 	        the main content of the pages.
 	    -->
+      <ul class="thumbnail-list">
+        <li class="thumbnail-item">
+          <a href="#">
+            <img
+              class="thumbnail-image"
+              src="./img/otter1.jpg"
+              alt="Barry the Otter"
+            />
+            <span class="thumbnail-title">Barry</span>
+          </a>
+        </li>
+        <li class="thumbnail-item">
+          <a href="#">
+            <img
+              class="thumbnail-image"
+              src="./img/otter2.jpg"
+              alt="Robin the Otter"
+            />
+            <span class="thumbnail-title">Robin</span>
+          </a>
+        </li>
+        <li class="thumbnail-item">
+          <a href="#">
+            <img
+              class="thumbnail-image"
+              src="./img/otter3.jpg"
+              alt="Maurice the Otter"
+            />
+            <span class="thumbnail-title">Maurice</span>
+          </a>
+        </li>
+        <li class="thumbnail-item">
+          <a href="#">
+            <img
+              class="thumbnail-image"
+              src="./img/otter4.jpg"
+              alt="Lesley the Otter"
+            />
+            <span class="thumbnail-title">Lesley</span>
+          </a>
+        </li>
+        <li class="thumbnail-item">
+          <a href="#">
+            <img
+              class="thumbnail-image"
+              src="./img/otter5.jpg"
+              alt="Barbara the Otter"
+            />
+            <span class="thumbnail-title">Barbara</span>
+          </a>
+        </li>
+      </ul>
 
-	    <!--
+      <div class="detail-image-container">
+        <img src="img/otter1.jpg" alt="" class="detail-image" alt="" />
+        <span class="detail-image-title">Stayin' Alive</span>
+      </div>
+
+      <!--
 	    	===DOCUMENT FOOTER===
 		    The part of a page that often contains a copyright notice and maybe links
 		    to a privacy policy and the like, but can also be used elsewhere.
@@ -85,11 +111,10 @@
 		    it is nested. I's the footer for the whole page only when its nearest
 		    ancestor from that list of elements in the body.
 	    -->
-		<footer id="footer">
-			<p>&copy;2022 Jose Sonhy. All rights reserved.</p>
-		</footer>
-
-	</div><!-- end container -->
-
-</body>
+      <footer id="footer">
+        <p>&copy;2022 Jose Sonhy. All rights reserved.</p>
+      </footer>
+    </div>
+    <!-- end container -->
+  </body>
 </html>
