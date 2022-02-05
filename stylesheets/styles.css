@@ -1,3 +1,14 @@
+@font-face {
+	font-family: 'lakeshore';
+	src: url('fonts/LAKESHOR-webfont.eot');
+	src: url('fonts/LAKESHOR-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/LAKESHOR-webfont.woff') format('woff'),
+		 url('fonts/LAKESHOR-webfont.ttf') format('truetype'),
+		 url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 .thumbnail-title {
 	display: block;
 	margin: 0;
@@ -13,7 +24,7 @@ body {
 }
 
 a {
-text-decoration: none;
+	text-decoration: none;
 }
 
 .logo-text {
@@ -21,10 +32,11 @@ text-decoration: none;
 
 	text-align: center;
 	text-transform: uppercase;
+	font-family: lakeshore;
 	font-size: 37px;
 }
 
-.thumbnail-item + .thumbnail-item {
+.thumbnail-item+.thumbnail-item {
 	margin-top: 10px;
 }
 
@@ -39,7 +51,7 @@ text-decoration: none;
 }
 
 .thumbnail-list {
-	list-style: none; 
+	list-style: none;
 	padding: 0;
 }
 
