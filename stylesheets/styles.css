@@ -60,5 +60,6 @@ a {
 }
 
 .thumbnail-item {
-	display: block;
+	display: inline-block;
+	width: 120px;
 }
