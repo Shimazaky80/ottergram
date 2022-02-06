@@ -16,34 +16,21 @@
     <link rel="icon" href="favicon.ico" />
   </head>
   <body>
-    <!-- ===START CONTAINER=== -->
-    <div class="container">
-      <!-- 
+    <!-- 
+        flex item 1
+        
 	    	===HEADER===
-	        masthead representing the header for the whole page 
-	        Typically, the page header includes the site's logo, the main navigation,
-	        other global links, and possibly even a search box
 	    -->
-      <header id="header">
-        <h1 class="logo-text"><a href="#">ottergram</a></h1>
-      </header>
+    <header id="header" class="main-header">
+      <h1 class="logo-text"><a href="#">ottergram</a></h1>
+    </header>
 
-      <!--
-			===MAIN NAVIGATION===
-			Links in a nav may point to content within the page, to other pages 
-			or resources, or both. Whatever the case maybe, use nav only for the
-			the page's most important groups of links, not all of them.
-		-->
+    <!--
+        flex item 2 
 
-      <!--
 	    	===MAIN CONTENT===
-	        The main element surrounds the content for the page's central topic.
-	        It's good practice to include role="main" in the main start tag.
-	        Main must be used only once on each page. Do not place main inside an
-	        article, aside, footer, header, or na element.
-	        The role="main" attribute-value pair can help screen readers locate
-	        the main content of the pages.
 	    -->
+    <main class="main-content">
       <ul class="thumbnail-list">
         <li class="thumbnail-item">
           <a href="#">
@@ -97,24 +84,12 @@
         </li>
       </ul>
 
+      <!-- flex item 3 -->
       <div class="detail-image-container">
         <img src="img/otter1.jpg" alt="" class="detail-image" alt="" />
         <span class="detail-image-title">Stayin' Alive</span>
       </div>
-
-      <!--
-	    	===DOCUMENT FOOTER===
-		    The part of a page that often contains a copyright notice and maybe links
-		    to a privacy policy and the like, but can also be used elsewhere.
-		    It represents a footer for the nearest article, aside, blockquote,
-		    body, details, fieldset, figure, nav, section, or td element in which
-		    it is nested. I's the footer for the whole page only when its nearest
-		    ancestor from that list of elements in the body.
-	    -->
-      <footer id="footer">
-        <p>&copy;2022 Jose Sonhy. All rights reserved.</p>
-      </footer>
-    </div>
-    <!-- end container -->
+    </main>
+    <!-- end main-content -->
   </body>
 </html>

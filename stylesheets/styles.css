@@ -9,6 +9,10 @@
 	font-style: normal;
 }
 
+html, body {
+	height: 100%;
+}
+
 .thumbnail-title {
 	display: block;
 	margin: 0;
@@ -18,17 +22,28 @@
 	font-size: 18px;
 }
 
+.detail-image-container {
+	flex: 1 1 auto;
+}
+
 .detail-image {
 	width: 90%;
 }
 
 body {
+	display: flex;
+	flex-direction: column;
+
 	font-size: 10px;
 	background-color: rgb(149, 194, 215);
 }
 
 a {
 	text-decoration: none;
+}
+
+.main-header {
+	flex: 0 1 auto;
 }
 
 .logo-text {
@@ -38,6 +53,12 @@ a {
 	text-transform: uppercase;
 	font-family: lakeshore;
 	font-size: 37px;
+}
+
+.main.content {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
 }
 
 .thumbnail-item+.thumbnail-item {
@@ -55,6 +76,8 @@ a {
 }
 
 .thumbnail-list {
+	flex: 0 1 auto;
+	order: 2;
 	list-style: none;
 	padding: 0;
 
