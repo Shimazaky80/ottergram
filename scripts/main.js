@@ -19,3 +19,14 @@ function setDetails(imageURL, titleText) {
     // detailTitle.textContent = 'You Should Be Dancing'
     detailTitle.textContent = titleText
 }
+
+// function to retrieve and return the value of the data-image-url attribute
+function imageFromThumb(thumbnail) {
+    'use strict'
+    return thumbnail.getAttribute('data-image-url')
+}
+
+function titleFromThumb(thumbnail) {
+    'use strict'
+    return thumbnail.getAttribute('data-image-title')
+}
