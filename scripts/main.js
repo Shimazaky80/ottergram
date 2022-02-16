@@ -49,3 +49,8 @@ function addThumbClickHandler(thumb) {
         setDetailsFromThumb(thumb)
     })
 }
+
+function getThumbnailsArray() {
+    'use strict';
+    let thumbnails = document.querySelectorAll(THUMBNAIL_LINK_SELECTOR);
+}
