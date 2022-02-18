@@ -53,4 +53,13 @@ function addThumbClickHandler(thumb) {
 function getThumbnailsArray() {
     'use strict';
     let thumbnails = document.querySelectorAll(THUMBNAIL_LINK_SELECTOR);
+    let thumbnailArray = [].slice.call(thumbnails)
 }
+
+function initializeEvents() {
+    'use strict'
+    let thumbnails = getThumbnailsArray()
+    thumbnails.forEach(addThumbClickHandler);
+}
+
+initializeEvents()
