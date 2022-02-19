@@ -3,6 +3,7 @@
 const DETAIL_IMAGE_SELECTOR = '[data-image-role="target"]'
 const DETAIL_TITLE_SELECTOR = '[data-image-role="title"]'
 const THUMBNAIL_LINK_SELECTOR = '[data-image-role="trigger"]'
+const HIDDEN_DETAIL_CLASS = 'hidden-detail'
 
 // function to change the image and text
 function setDetails(imageURL, titleText) {
@@ -54,6 +55,11 @@ function getThumbnailsArray() {
     'use strict';
     let thumbnails = document.querySelectorAll(THUMBNAIL_LINK_SELECTOR);
     let thumbnailArray = [].slice.call(thumbnails)
+}
+
+function hideDetails() {
+    'use strict'
+    document.body.classList.add(HIDDEN_DETAIL_CLASS)
 }
 
 function initializeEvents() {
