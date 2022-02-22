@@ -62,10 +62,19 @@ function hideDetails() {
     document.body.classList.add(HIDDEN_DETAIL_CLASS)
 }
 
+function addKeyPressHandler() {
+    'use strict'
+    document.body.addEventListener('keyup', function (event) {
+        event.preventDefault()
+        console.log(event.keyCode)
+    })
+}
+
 function initializeEvents() {
     'use strict'
     let thumbnails = getThumbnailsArray()
     thumbnails.forEach(addThumbClickHandler);
+    addKeyPressHandler()
 }
 
 initializeEvents()
