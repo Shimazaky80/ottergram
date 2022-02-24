@@ -69,6 +69,11 @@ function showDetails() {
     document.body.classList.remove(HIDDEN_DETAIL_CLASS)
 }
 
+function showDetails() {
+    'use strict'
+    document.body.classList.remove(HIDDEN_DETAIL_CLASS)
+}
+
 function addKeyPressHandler() {
     'use strict'
     document.body.addEventListener('keyup', function (event) {
