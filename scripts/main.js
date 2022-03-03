@@ -2,9 +2,11 @@
 // selecting attributes from html
 const DETAIL_IMAGE_SELECTOR = '[data-image-role="target"]'
 const DETAIL_TITLE_SELECTOR = '[data-image-role="title"]'
+const DETAL_FRAME_SELECTOR = '[data-image-role="frame"]'
 const THUMBNAIL_LINK_SELECTOR = '[data-image-role="trigger"]'
 const HIDDEN_DETAIL_CLASS = 'hidden-detail'
 const ESC_KEY = 27
+const TINY_EFFECT_CLASS = 'is-tiny'
 
 // function to change the image and text
 function setDetails(imageURL, titleText) {
@@ -66,12 +68,12 @@ function hideDetails() {
 
 function showDetails() {
     'use strict'
+    const frame = document.querySelector(DETAL_FRAME_SELECTOR)
     document.body.classList.remove(HIDDEN_DETAIL_CLASS)
-}
-
-function showDetails() {
-    'use strict'
-    document.body.classList.remove(HIDDEN_DETAIL_CLASS)
+    frame.classList.add(TINY_EFFECT_CLASS)
+    setTimeout( () => {
+        frame.classList.remove(TINY_EFFECT_CLASS)
+    })
 }
 
 function addKeyPressHandler() {

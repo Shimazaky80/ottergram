@@ -43,6 +43,13 @@ html, body {
 .detail-image-frame {
 	position: relative;
 	text-align: center;
+
+	transition: transform 333ms;
+}
+
+.is-tiny {
+	transform: scale(0.001);
+	transition: transform 0m;
 }
 
 .detail-image {
