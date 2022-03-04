@@ -73,7 +73,7 @@ function showDetails() {
     frame.classList.add(TINY_EFFECT_CLASS)
     setTimeout( () => {
         frame.classList.remove(TINY_EFFECT_CLASS)
-    })
+    }, 50)
 }
 
 function addKeyPressHandler() {
